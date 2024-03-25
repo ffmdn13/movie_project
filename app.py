@@ -18,6 +18,9 @@ db = client[DB_NAME]
 
 app = Flask(__name__)
 
+def kerenbang():
+    return "makanbang"
+
 @app.route('/')
 def home():
     return render_template('index.html')
