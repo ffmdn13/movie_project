@@ -13,6 +13,8 @@ load_dotenv(dotenv_path)
 MONGODB_URI = os.environ.get('MONGODB_URI')
 DB_NAME = os.environ.get('DB_NAME')
 
+var = 'makanbang'
+
 client = MongoClient(MONGODB_URI)
 db = client[DB_NAME]
 
